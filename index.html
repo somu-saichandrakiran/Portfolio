@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Somu Sai Chandra Kiran — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Instrument+Serif:ital@0;1&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <!-- Noise Overlay -->
+    <div class="noise"></div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-logo">Somu <span>Kiran</span></div>
+        <ul class="nav-links">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <a href="mailto:somukiran954@gmail.com" class="nav-cta">Hire Me</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="#about" class="mob-link">About</a></li>
+            <li><a href="#experience" class="mob-link">Experience</a></li>
+            <li><a href="#projects" class="mob-link">Projects</a></li>
+            <li><a href="#contact" class="mob-link">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-text">DEV</div>
+        <div class="hero-content">
+            <div class="hero-tag reveal-up">
+                <span class="dot"></span> Available for opportunities
+            </div>
+            <h1 class="hero-name reveal-up">
+                Somu Sai<br /><em>Chandra Kiran</em>
+            </h1>
+            <p class="hero-role reveal-up">
+                CS Student · AI & Full-Stack Engineer · Cloud Enthusiast
+            </p>
+            <div class="hero-desc reveal-up">
+                Building intelligent systems that scale — from ML APIs on Oracle Cloud<br />to real-time AI meeting
+                summarizers. Based in <strong>India</strong>.
+            </div>
+            <div class="hero-actions reveal-up">
+                <a href="#projects" class="btn-primary">View Projects</a>
+                <a href="mailto:somukiran954@gmail.com" class="btn-secondary">Get In Touch</a>
+            </div>
+            <div class="hero-links reveal-up">
+                <a href="https://github.com/somukiran" target="_blank" class="social-link">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+                    </svg>
+                    GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/somu-kiran-765790345/" target="_blank" class="social-link">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                    </svg>
+                    LinkedIn
+                </a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="avatar-ring">
+                <div class="avatar-inner">
+                    <span>SK</span>
+                </div>
+                <div class="ring r1"></div>
+                <div class="ring r2"></div>
+                <div class="ring r3"></div>
+            </div>
+            <div class="stat-card s1">
+                <div class="stat-num">8.7</div>
+                <div class="stat-label">CGPA</div>
+            </div>
+            <div class="stat-card s2">
+                <div class="stat-num">4+</div>
+                <div class="stat-label">Certifications</div>
+            </div>
+            <div class="stat-card s3">
+                <div class="stat-num">95%</div>
+                <div class="stat-label">Face Recog. Accuracy</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About / Skills -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="section-label reveal-up">// 01 — About</div>
+            <div class="about-grid">
+                <div class="about-text reveal-up">
+                    <h2>Building the Bridge Between <em>AI & Reality</em></h2>
+                    <p>I'm a Computer Science student at SRM University (Class of 2026) passionate about bringing
+                        AI-driven ideas to production. From deploying ML APIs on Oracle Cloud to building full-stack
+                        apps with real-time speech processing, I love the entire stack.</p>
+                    <p>With internship experience in SQL optimization and React/Node development, I've learned to ship
+                        fast and scale smart.</p>
+                    <div class="cert-strip">
+                        <span class="cert-badge">Oracle Certified Foundations Associate</span>
+                        <span class="cert-badge">AWS ML Foundations</span>
+                        <span class="cert-badge">AI Associate — Salesforce</span>
+                        <span class="cert-badge">DBMS — Scalar</span>
+                    </div>
+                </div>
+                <div class="skills-panel reveal-up">
+                    <div class="skill-group">
+                        <div class="skill-group-title">Languages</div>
+                        <div class="skill-tags">
+                            <span>Python</span><span>Java</span><span>JavaScript</span><span>C/C++</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <div class="skill-group-title">AI / NLP</div>
+                        <div class="skill-tags">
+                            <span>Machine Learning</span><span>Speech-to-Text</span><span>Text
+                                Summarization</span><span>Translation</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <div class="skill-group-title">Frontend</div>
+                        <div class="skill-tags">
+                            <span>React.js</span><span>HTML</span><span>CSS</span><span>Tailwind</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <div class="skill-group-title">Backend</div>
+                        <div class="skill-tags">
+                            <span>Node.js</span><span>Express.js</span><span>Flask</span><span>Django</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <div class="skill-group-title">Databases</div>
+                        <div class="skill-tags">
+                            <span>MySQL</span><span>MongoDB</span><span>SQLite</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <div class="skill-group-title">Cloud & Tools</div>
+                        <div class="skill-tags">
+                            <span>Oracle
+                                OCI</span><span>AWS</span><span>Docker</span><span>Git</span><span>Vercel</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="experience section" id="experience">
+        <div class="container">
+            <div class="section-label reveal-up">// 02 — Experience</div>
+            <h2 class="section-heading reveal-up">Work History</h2>
+            <div class="timeline">
+
+                <div class="timeline-item reveal-up">
+                    <div class="timeline-meta">
+                        <span class="timeline-period">Jun 2025 – Jul 2025</span>
+                        <span class="timeline-loc">📍 Bengaluru</span>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-role">SQL Engineer Intern</div>
+                        <div class="timeline-company">KOCHASOFT</div>
+                        <ul class="timeline-bullets">
+                            <li>Designed 6+ MySQL database tables for inventory and sales systems</li>
+                            <li>Wrote and optimized 40+ SQL queries, improving data retrieval speed by
+                                <strong>35%</strong></li>
+                            <li>Automated workflows using stored procedures, reducing manual effort by
+                                <strong>50%</strong></li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>MySQL</span><span>SQL Optimization</span><span>Stored Procedures</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal-up">
+                    <div class="timeline-meta">
+                        <span class="timeline-period">Jan 2023 – Feb 2023</span>
+                        <span class="timeline-loc">📍 Remote</span>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-role">Full Stack Intern</div>
+                        <div class="timeline-company">WIZGRAD SOLUTIONS</div>
+                        <ul class="timeline-bullets">
+                            <li>Developed responsive web pages using React, HTML, and CSS</li>
+                            <li>Built backend APIs with Node.js and MongoDB handling <strong>1000+ records</strong></li>
+                            <li>Improved frontend performance by <strong>20%</strong> through optimization techniques
+                            </li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>React</span><span>Node.js</span><span>MongoDB</span><span>REST API</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects section" id="projects">
+        <div class="container">
+            <div class="section-label reveal-up">// 03 — Projects</div>
+            <h2 class="section-heading reveal-up">Featured Work</h2>
+            <div class="projects-grid">
+
+                <div class="project-card reveal-up" data-index="01">
+                    <div class="project-accent"></div>
+                    <div class="project-num">01</div>
+                    <h3 class="project-title">Cloud-Based ML Prediction API</h3>
+                    <p class="project-desc">Developed and deployed a machine learning model as a REST API using FastAPI,
+                        hosted on Oracle Cloud Infrastructure for scalable real-time predictions via API endpoints.</p>
+                    <div class="project-stack">
+                        <span>FastAPI</span><span>OCI</span><span>Machine Learning</span><span>REST API</span>
+                    </div>
+                    <div class="project-footer">
+                        <span class="project-highlight">⚡ Production Deployed</span>
+                    </div>
+                </div>
+
+                <div class="project-card reveal-up featured" data-index="02">
+                    <div class="project-accent"></div>
+                    <div class="project-num">02</div>
+                    <h3 class="project-title">MeetScript — AI Meeting Summarizer</h3>
+                    <p class="project-desc">End-to-end AI pipeline: audio → text → summarized insights → translation
+                        across 5+ languages using Whisper + BART. Full-stack React + Flask app deployed on cloud.</p>
+                    <div class="project-stack">
+                        <span>React</span><span>Flask</span><span>Whisper</span><span>BART</span><span>NLP</span>
+                    </div>
+                    <div class="project-footer">
+                        <span class="project-highlight">🌐 5+ Languages</span>
+                    </div>
+                </div>
+
+                <div class="project-card reveal-up" data-index="03">
+                    <div class="project-accent"></div>
+                    <div class="project-num">03</div>
+                    <h3 class="project-title">Smart Attendance System</h3>
+                    <p class="project-desc">Real-time face recognition attendance system using OpenCV and face-api.js
+                        with 95%+ accuracy. JWT-based authentication managing 1000+ user records.</p>
+                    <div class="project-stack">
+                        <span>OpenCV</span><span>face-api.js</span><span>JWT</span><span>Node.js</span>
+                    </div>
+                    <div class="project-footer">
+                        <span class="project-highlight">🎯 95%+ Accuracy</span>
+                    </div>
+                </div>
+
+                <div class="project-card reveal-up" data-index="04">
+                    <div class="project-accent"></div>
+                    <div class="project-num">04</div>
+                    <h3 class="project-title">CineMatch — AI Movie Recommender</h3>
+                    <p class="project-desc">Mood-based AI recommendation engine integrating TMDB and JustWatch APIs for
+                        real-time content data with personalized Firebase-backed watchlists.</p>
+                    <div class="project-stack">
+                        <span>AI/ML</span><span>TMDB API</span><span>Firebase</span><span>JustWatch</span>
+                    </div>
+                    <div class="project-footer">
+                        <span class="project-highlight">🎬 Real-time Data</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section class="education section" id="education">
+        <div class="container">
+            <div class="section-label reveal-up">// 04 — Education</div>
+            <h2 class="section-heading reveal-up">Academic Background</h2>
+            <div class="edu-card reveal-up">
+                <div class="edu-header">
+                    <div class="edu-left">
+                        <div class="edu-icon">🎓</div>
+                        <div class="edu-info">
+                            <div class="edu-degree">B.Tech in Computer Science</div>
+                            <div class="edu-school">SRM University, India</div>
+                            <div class="edu-period">June 2022 — May 2026</div>
+                        </div>
+                    </div>
+                    <div class="edu-right">
+                        <div class="cgpa-display">
+                            <div class="cgpa-num">8.7</div>
+                            <div class="cgpa-label">/ 10 CGPA</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="edu-bar-wrap">
+                    <div class="edu-bar-label">
+                        <span>Academic Performance</span>
+                        <span class="edu-bar-pct">87%</span>
+                    </div>
+                    <div class="edu-bar-track">
+                        <div class="edu-bar" data-width="87"></div>
+                    </div>
+                </div>
+
+                <div class="edu-coursework">
+                    <div class="coursework-title">Relevant Coursework</div>
+                    <div class="coursework-grid">
+                        <div class="course-group">
+                            <div class="course-group-label">Core</div>
+                            <div class="course-tags">
+                                <span>Data Structures & Algorithms</span>
+                                <span>Database Management Systems</span>
+                                <span>Operating Systems</span>
+                                <span>Computer Networks</span>
+                            </div>
+                        </div>
+                        <div class="course-group">
+                            <div class="course-group-label">Specialized</div>
+                            <div class="course-tags">
+                                <span>Object-Oriented Programming</span>
+                                <span>Software Engineering</span>
+                                <span>Machine Learning</span>
+                                <span>Artificial Intelligence</span>
+                                <span>Natural Language Processing</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="section-label reveal-up">// 05 — Contact</div>
+            <div class="contact-inner reveal-up">
+                <h2>Let's Build Something <em>Remarkable</em></h2>
+                <p>Open to internship opportunities, collaborations, and exciting projects in AI, full-stack
+                    development, or cloud engineering.</p>
+                <div class="contact-methods">
+                    <a href="mailto:somukiran954@gmail.com" class="contact-method">
+                        <span class="cm-icon">✉</span>
+                        <span>somukiran954@gmail.com</span>
+                    </a>
+                    <a href="tel:+919381935383" class="contact-method">
+                        <span class="cm-icon">📱</span>
+                        <span>+91 9381935383</span>
+                    </a>
+                    <a href="https://github.com/somukiran" target="_blank" class="contact-method">
+                        <span class="cm-icon">⌥</span>
+                        <span>Github</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/somu-kiran-765790345/" target="_blank" class="contact-method">
+                        <span class="cm-icon">in</span>
+                        <span>Linkedin</span>
+                    </a>
+                </div>
+                <a href="mailto:somukiran954@gmail.com" class="btn-primary large">Start a Conversation →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-logo">SSCK</div>
+                <p>© 2025 Somu Sai Chandra Kiran. Crafted with intention.</p>
+                <div class="footer-links">
+                    <a href="https://github.com/somukiran" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/somu-kiran-765790345/" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
